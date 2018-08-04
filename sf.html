@@ -1,0 +1,51 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<form id="survey-form">
+  <div class="container">
+    <div class="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">It's a survey form.</p>
+    </div>
+    <div class="q1"><label id="name-label">*Name: </label></div>
+    <div class="a1"><input type="text" id="name" placeholder="John Smith" required></></div>
+    <div class="q2"><label id="email-label">*Email: </label></div>
+    <div class="a2"><input type="email" id="email" placeholder="john@smith.com" required></></div>
+    <div class="q3"><label id="number-label">Number: </label></div>
+    <div class="a3"><input type="number" id="number" placeholder="1234567890" min="0000000000" max="9999999999"></div>
+    <div class="q4">Subscribe to our newsletter?</div>
+    <div class="a4">
+      <label><input type="radio" name="subscribe" value="1" checked>Yes</label>
+      <label><input type="radio" name="subscribe" value="3">No</label>
+      <label><input type="radio" name="subscribe" value="2">Maybe later</lable>
+    </div>
+    <div class="q5">How did you hear about us?</div>
+    <div class="a5">
+      <select id="dropdown" class="dropdown">
+        <option value="web">Web</option>
+        <option value="print">Print</option>
+        <option value="radio">Radio</option>
+        <option value="word-of-mouth">Word of mouth</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="q6">Which area are you interested in?</div>
+    <div class="a6">
+      <ul id="area">
+        <li class="checkbox"><label><input type="checkbox" name="check" value="1">Europe</label></li>
+        <li class="checkbox"><label><input type="checkbox" name="check" value="2">Asia</label></li>
+        <li class="checkbox"><label><input type="checkbox" name="check" value="3">Africa</label></li>
+        <li class="checkbox"><label><input type="checkbox" name="check" value="2">North America</label></li>
+        <li class="checkbox"><label><input type="checkbox" name="check" value="3">South America</label></li>
+      </ul>
+    </div>
+    <div class="q7">Additional feedback:</div>
+    <div class="a7">
+      <label for="textbox"><textarea id="box" name="bigbox" rows="3" cols="20" wrap="off"></textarea></label>
+    </div>
+    <div class="footer"><button type="submit" id="submit">Submit</button></div>
+  </div>
+</form>
