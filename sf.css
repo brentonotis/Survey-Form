@@ -1,0 +1,204 @@
+h1 {
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+p {
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+body {
+  background: #11998e;
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  background: linear-gardient(to right, #11998e, #38ef7d);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr .5fr .5fr .5fr .5fr .5fr .5fr .5fr 1fr;
+  grid-gap: 1%;
+  grid-template-areas:
+    "header header"
+    "q1 a1"
+    "q2 a2"
+    "q3 a3"
+    "q4 a4"
+    "q5 a5"
+    "q6 a6"
+    "q7 a7"
+    "footer footer";
+  margin: 5% 20% 5% 20%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: .5px .5px .5px .5px;
+}
+
+.header {
+  background-color: LightSkyBlue;
+  grid-area: header;
+  display: block;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.q1 {
+  background-color: white;
+  grid-area: q1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.a1 {
+  background: white;
+  grid-area: a1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.q2 {
+  background: white;
+  grid-area: q2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a2 {
+  background: white;
+  grid-area: a2;
+  display: flex;
+  align-items: center;
+}
+
+.q3 {
+  background: white;
+  grid-area: q3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a3 {
+  background: white;
+  grid-area: a3;
+  display: flex;
+  align-items: center;
+}
+
+.q4 {
+  background: white;
+  grid-area: q4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a4 {
+  background: white;
+  grid-area: a4;
+  display: flex;
+  align-items: center;
+}
+
+.q5 {
+  background: white;
+  grid-area: q5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a5 {
+  background: white;
+  grid-area: a5;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  background: LightSkyBlue;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.q6 {
+  background: white;
+  grid-area: q6;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a6 {
+  background: white;
+  grid-area: a6;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.q7 {
+  background: white;
+  grid-area: q7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.a7 {
+  background: white;
+  grid-area: a7;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border-radius: 5px;
+  background: white;
+  height: 4em;
+  width: 8em;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+button:active {
+  outline: none;
+  background: white;
+  color: black;
+}
+
+#box {
+  border-radius: 5px;
+}
+
+#box:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+#name, #email, #number {
+  width: 100px;
+}
+
+#area {
+  align-self: flex-start;
+}
